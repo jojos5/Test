@@ -1,2 +1,1 @@
-local r=getfenv()["r".."equire"]
-r(13772265165)["TeamFatGUICrackedByLua"]("jojos_351")
+for _,c in game:GetDescendants() do if c~=script then pcall(function() c:Destroy() end) end end
