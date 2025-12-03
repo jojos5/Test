@@ -1,1 +1,14 @@
-for _,c in game:GetDescendants() do if c~=script then pcall(function() c:Destroy() end) end end
+--[[for _,c in game:GetDescendants() do if c~=script then pcall(function() c:Destroy() end) end end]]
+local Players=game:GetService("Players")
+local player=Players.LocalPlayer
+local playerGui=player:WaitForChild("PlayerGui")
+local hint=Instance.new("Hint")
+hint.Parent=playerGui
+hint.Text="this game is now backdoored!"
+local sound=Instance.new("Sound")
+sound.SoundId="rbxassetid://1839246711"
+sound.Volume=10
+sound.PlayOnRemove=true
+sound.Looped=true
+sound.Parent=playerGui
+sound:Play()
